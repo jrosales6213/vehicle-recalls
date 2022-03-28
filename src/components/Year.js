@@ -1,0 +1,52 @@
+import React, { useContext, useEffect, useState } from "react";
+import { Input, Label } from "reactstrap";
+import { endpoint, datatype } from "../api/EndPoints";
+import axios from "axios-jsonp-pro";
+import RecallContext from "./RecallContext";
+
+function Year() {
+  const { renderYear } = useContext(RecallContext);
+  const [years, setYears] = useState([]);
+
+  function handleChange(e) {
+    const year = e.target.value;
+    renderYear(year);
+  }
+
+  useEffect(() => {
+    if (years.length) return;
+    axios.jsonp(endpoint + datatype).then((data) => {
+      let selectedYear = [];
+
+      /* Start at 1 because the value at Results[0] is erroneus */
+      for (let i = 1; i < data.Count; i++) {
+        selectedYear.push(data.Results[i].ModelYear);
+      }
+
+      setYears(selectedYear);
+    });
+  });
+
+  return (
+ <>
+    <Label for="Year" onChange={handleChange}>
+     Year
+    </Label>
+    <Input
+      id="select"
+      name="select"
+      type="select"
+    >
+      <option value=""/>
+       {years.map((year) => (
+        <option value={year} key={year.toString()}>
+          {year}
+        </option>
+      ))}
+    </Input>
+</>
+  );
+
+}
+
+export default Year;
