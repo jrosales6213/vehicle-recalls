@@ -29,13 +29,14 @@ function Year() {
 
   return (
  <>
-    <Label for="Year" onChange={handleChange}>
+    <Label for="Year" >
      Year
     </Label>
     <Input
       id="select"
       name="select"
       type="select"
+      onChange={handleChange}
     >
       <option value=""/>
        {years.map((year) => (

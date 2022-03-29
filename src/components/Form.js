@@ -1,7 +1,8 @@
 import React from "react";
-import {Form , FormGroup, Label , Input} from "reactstrap";
+import {Form , FormGroup} from "reactstrap";
 import Year from "./Year";
 import Make from "./Make";
+import Model from "./Model"
 
 function SearchForm() {
     return (
@@ -70,7 +71,7 @@ function SearchForm() {
 
       {/* MODEL COMPONENT
        */}
-    <Label for="exampleSelect">
+    {/* <Label for="exampleSelect">
      Year
     </Label>
     <Input
@@ -93,7 +94,8 @@ function SearchForm() {
       <option>
         5
       </option>
-    </Input>
+    </Input> */}
+    <Model/>
     </FormGroup>
   
 </Form>

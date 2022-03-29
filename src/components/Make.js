@@ -32,7 +32,7 @@ function Make() {
         return (
           <>
             <Label for="Make">Make</Label>
-            <Input id="select" name="select" type="select" onChange={handleChange}>
+            <Input value={make} id="select" name="select" type="select" onChange={handleChange}>
               <option value="" />
               {makes.map((make) => (
                 <option value={make.replace('/&/g', '_')} key={make}>
