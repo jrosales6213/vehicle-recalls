@@ -7,98 +7,19 @@ import Model from "./Model"
 function SearchForm() {
     return (
    <Form className="row justify-content-center p-3">
-    <FormGroup className = "col-sm-4">
-      <Year/>
-
-      {/* YEAR COMPONENT */}
-
-    {/* <Label for="exampleSelect">
-     Make
-    </Label>
-    <Input
-      id="exampleSelect"
-      name="select"
-      type="select"
-    >
-      <option>
-        1
-      </option>
-      <option>
-        2
-      </option>
-      <option>
-        3
-      </option>
-      <option>
-        4
-      </option>
-      <option>
-        5
-      </option>
-    </Input> */}
-    </FormGroup>
-    <FormGroup className = "col-sm-4">
-
-      {/* MAKE COMPONENT */}
-      <Make/>
-
-    {/* <Label for="exampleSelect">
-      Model
-    </Label>
-    <Input
-      id="exampleSelect"
-      name="select"
-      type="select"
-    >
-      <option>
-        1
-      </option>
-      <option>
-        2
-      </option>
-      <option>
-        3
-      </option>
-      <option>
-        4
-      </option>
-      <option>
-        5
-      </option>
-    </Input> */}
-    </FormGroup>
-    <FormGroup className = "col-sm-4">
-
-      {/* MODEL COMPONENT
-       */}
-    {/* <Label for="exampleSelect">
-     Year
-    </Label>
-    <Input
-      id="exampleSelect"
-      name="select"
-      type="select"
-    >
-      <option>
-        1
-      </option>
-      <option>
-        2
-      </option>
-      <option>
-        3
-      </option>
-      <option>
-        4
-      </option>
-      <option>
-        5
-      </option>
-    </Input> */}
-    <Model/>
-    </FormGroup>
-  
-</Form>
+        <FormGroup className = "col-sm-4">
+             <Year/>
+        </FormGroup>
+        <FormGroup className = "col-sm-4">
+            <Make/>
+        </FormGroup>
+        <FormGroup className = "col-sm-4">
+             <Model/>
+        </FormGroup>
+        <div className="text-center p-3">
+            <button id="btn-submit" type="submit" className="btn btn-lg px-4 me-md-2 text-light">Search</button>
+        </div>
+   </Form>
     )
 }
 

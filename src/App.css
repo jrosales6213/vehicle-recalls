@@ -1,11 +1,20 @@
-.color1 {color: #122807;}
-.color2 {color: #12565f;}
-.color3 {color: #e38015;}
-.color4 {color: #ecca51;}
-.color5 {color: #f6ed9e;}
+.color1 {
+  color: #122807;
+}
+.color2 {
+  color: #12565f;
+}
+.color3 {
+  color: #e38015;
+}
+.color4 {
+  color: #ecca51;
+}
+.color5 {
+  color: #f6ed9e;
+}
 /* #e9803b;
 background-color: #196665; */
-
 
 main {
   color: #f1eee0;
@@ -14,15 +23,14 @@ main {
   background-color: #124645;
 }
 #hero-image {
-  background-image: url('../public/computer.jpg');
+  background-image: url("../public/computer.jpg");
   opacity: 0.8;
-
 }
 #btn-search {
   background-color: #e38015;
 }
 .form-container {
-background-color: #317776;
+  background-color: #317776;
 }
 #btn-submit {
   background-color: #4a9694;
@@ -35,4 +43,7 @@ background-color: #317776;
 }
 #card-body {
   background-color: #f0f0f0;
+}
+#card-deck {
+  display: none;
 }

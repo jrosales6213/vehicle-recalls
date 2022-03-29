@@ -36,14 +36,6 @@ function Model() {
     <RecallContext.Consumer>
       {({ model }) => {
         return (
-        //   <select value={model} onChange={handleChange} label="Model">
-        //     <option value="" />
-        //     {models.map((model) => (
-        //       <option value={model.replace("/&/g", "_")} key={model}>
-        //         {model}
-        //       </option>
-        //     ))}
-        //   </select>
         <>
          <Label for="Model">Model</Label>
             <Input value={model} id="select" name="select" type="select" onChange={handleChange}>

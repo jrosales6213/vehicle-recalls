@@ -1,15 +1,9 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Main from './components/Main'
-
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Main from "./components/Main";
 
 function App() {
-  return (
-    <div>
-     <Main />
-       
-    </div>
-  );
+  return <Main />;
 }
 
 export default App;
