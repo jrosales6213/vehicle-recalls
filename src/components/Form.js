@@ -1,6 +1,7 @@
 import React from "react";
 import {Form , FormGroup, Label , Input} from "reactstrap";
 import Year from "./Year";
+import Make from "./Make";
 
 function SearchForm() {
     return (
@@ -38,8 +39,9 @@ function SearchForm() {
     <FormGroup className = "col-sm-4">
 
       {/* MAKE COMPONENT */}
+      <Make/>
 
-    <Label for="exampleSelect">
+    {/* <Label for="exampleSelect">
       Model
     </Label>
     <Input
@@ -62,7 +64,7 @@ function SearchForm() {
       <option>
         5
       </option>
-    </Input>
+    </Input> */}
     </FormGroup>
     <FormGroup className = "col-sm-4">
 

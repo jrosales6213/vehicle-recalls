@@ -53,7 +53,7 @@ function Main() {
 {/* KEEP IN MAIN COMPOENTENT */}
 
 <div className="text-center p-3">
-<button id="btn-submit" type="submit" class="btn btn-lg px-4 me-md-2 text-light">Search</button>
+<button id="btn-submit" type="submit" className="btn btn-lg px-4 me-md-2 text-light">Search</button>
 </div>
 
 </div>
