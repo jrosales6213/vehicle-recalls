@@ -1,9 +1,10 @@
 import React from "react";
 import { Col, Row, Button } from "reactstrap";
+import { learnMore } from "../api/EndPoints";
 
 function HeroComponent() {
   return (
-    <div className="container hero col-xxl px-4 py-5">
+    <div className="container hero  px-4 py-5">
       <Row className="flex-lg-row-reverse align-items-center g-5 py-5">
         <Col className="col-10 col-sm-8 col-lg-6">
           <img
@@ -27,12 +28,15 @@ function HeroComponent() {
               id="btn-search"
               type="button"
               className="btn btn-lg px-4 me-md-2"
+              href="#search-form"
             >
               Search
             </Button>
             <Button
               type="button"
-              className="btn btn-outline-secondary btn-lg px-4"
+              className="btn btn-outline-secondary btn-lg px-4 text-light"
+              href={learnMore}
+              target="_blank"
             >
               Learn More
             </Button>

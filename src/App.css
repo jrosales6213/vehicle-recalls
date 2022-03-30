@@ -47,3 +47,27 @@ main {
 /* #card-deck {
   display: none;
 } */
+/* .card-container {
+  height: 100%;
+} */
+.resources {
+  background-color: #e38015;
+}
+#report-img {
+  width: 350px;
+  height: 350px;
+  opacity: 0.9;
+}
+#report-btn {
+  background-color: #124645;
+  color: #f1eee0;
+}
+.text-report {
+  color: #124645;
+}
+.btn-floating {
+  color: black;
+}
+.fab {
+  color: #090e0d;
+}

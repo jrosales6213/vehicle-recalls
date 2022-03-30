@@ -2,7 +2,14 @@ import React, { useContext, useEffect, useState } from "react";
 import { endpoint, datatype } from "../api/EndPoints";
 import axios from "axios-jsonp-pro";
 import RecallContext from "./RecallContext";
-import { Card, CardTitle, CardText, CardDeck, CardBody } from "reactstrap";
+import {
+  Card,
+  CardTitle,
+  CardText,
+  CardDeck,
+  CardBody,
+  CardSubtitle,
+} from "reactstrap";
 import { FadeInOut } from "react-animation-components";
 
 function RecallCard() {
@@ -20,11 +27,21 @@ function RecallCard() {
               key={campaign.NHTSACampaignNumber}
             >
               <CardBody className="text-dark">
-                <CardTitle>{campaign.NHTSACampaignNumber}</CardTitle>
-                {/* <CardSubtitle>{campaign.ReportReceivedDate}</CardSubtitle> */}
-                <CardText>{campaign.Summary}</CardText>
-                <CardText>{campaign.Conequence}</CardText>
-                <CardText>{campaign.Remedy}</CardText>
+                <CardTitle>
+                  <span className="h6">Campaign Number:</span>{" "}
+                  {campaign.NHTSACampaignNumber}
+                </CardTitle>
+                <CardText>
+                  <span className="h6">Summary: </span>
+                  {campaign.Summary}
+                </CardText>
+                <CardText>
+                  <span className="h6">Conequence: </span> {campaign.Conequence}
+                </CardText>
+                <CardText>
+                  <span className="h6">Remedy: </span>
+                  {campaign.Remedy}
+                </CardText>
               </CardBody>
             </Card>
           ))}

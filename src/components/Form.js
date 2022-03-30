@@ -16,9 +16,6 @@ function SearchForm() {
       <FormGroup className="col-sm-4">
         <Model />
       </FormGroup>
-      {/* <div className="text-center p-3">
-            <button id="btn-submit" type="submit" className="btn btn-lg px-4 me-md-2 text-light">Search</button>
-        </div> */}
     </Form>
   );
 }
