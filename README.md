@@ -8,9 +8,9 @@ A simple web application that pulls data from the NHTSA vehicle recall database.
 
 ## Techonologies Used
 
--React.Js
--Bootstrap
--NHTSA recall API
+*React.Js
+*Bootstrap
+\*NHTSA recall API
 
 ## Available Scripts
 
