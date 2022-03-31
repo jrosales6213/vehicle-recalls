@@ -7,3 +7,4 @@ export const recallReport =
 export const learnMore = "https://www.nhtsa.gov/recalls";
 export const linkedIn = "https://www.linkedin.com/in/jesus-rosales-548754200/";
 export const gitHub = "https://github.com/jrosales6213";
+export const gitHubProject = "https://github.com/jrosales6213/vehicle-recalls";

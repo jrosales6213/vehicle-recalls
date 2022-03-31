@@ -5,8 +5,8 @@ import { recallReport } from "../api/EndPoints";
 function Report() {
   return (
     <div className="resources container mt-4">
-      <h1 className=" fw-bold">Report a Safety Problem</h1>
-      <Row className="row">
+      <h1 className="report-titlefw-bold m-3 pt-2">Report a Safety Problem</h1>
+      <Row className="row m-3">
         <Col className="col-md-7">
           <h2 className="featurette-heading text-report">
             Have you experienced a vehicle, tire, car seat, or equipment safety

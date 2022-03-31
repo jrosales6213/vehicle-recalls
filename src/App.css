@@ -1,23 +1,5 @@
-.color1 {
-  color: #122807;
-}
-.color2 {
-  color: #12565f;
-}
-.color3 {
-  color: #e38015;
-}
-.color4 {
-  color: #ecca51;
-}
-.color5 {
-  color: #f6ed9e;
-}
-/* #e9803b;
-background-color: #196665; */
-
 main {
-  color: #f1eee0;
+  color: #f5f3ed;
 }
 .hero {
   background-color: #124645;
@@ -44,14 +26,12 @@ main {
 #card-body {
   background-color: #f0f0f0;
 }
-/* #card-deck {
-  display: none;
-} */
-/* .card-container {
-  height: 100%;
-} */
+
 .resources {
   background-color: #e38015;
+}
+.report-title {
+  color: #faf9f4;
 }
 #report-img {
   width: 350px;
@@ -59,8 +39,8 @@ main {
   opacity: 0.9;
 }
 #report-btn {
-  background-color: #124645;
-  color: #f1eee0;
+  background-color: #286564;
+  color: #f5f3ed;
 }
 .text-report {
   color: #124645;
@@ -70,4 +50,10 @@ main {
 }
 .fab {
   color: #090e0d;
+}
+.fa-linkedin {
+  color: #151d1c;
+}
+.fa-github {
+  color: #151d1c;
 }

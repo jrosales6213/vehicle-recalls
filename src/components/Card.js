@@ -2,14 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { endpoint, datatype } from "../api/EndPoints";
 import axios from "axios-jsonp-pro";
 import RecallContext from "./RecallContext";
-import {
-  Card,
-  CardTitle,
-  CardText,
-  CardDeck,
-  CardBody,
-  CardSubtitle,
-} from "reactstrap";
+import { Card, CardTitle, CardText, CardDeck, CardBody } from "reactstrap";
 import { FadeInOut } from "react-animation-components";
 
 function RecallCard() {
@@ -19,7 +12,7 @@ function RecallCard() {
 
   function CardComponent() {
     return (
-      <FadeInOut in duration={400}>
+      <FadeInOut in duration={400} animation={false}>
         <CardDeck id="card-deck" className="row justify-content-center">
           {campaigns.map((campaign) => (
             <Card
@@ -87,5 +80,3 @@ function RecallCard() {
 }
 
 export default RecallCard;
-
-// https://stackoverflow.com/questions/24502898/show-or-hide-element-in-react
